@@ -1,0 +1,7 @@
+{
+  "name": "ionic3-infos_hardware",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}

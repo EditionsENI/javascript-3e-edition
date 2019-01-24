@@ -1,0 +1,36 @@
+<!-- En-tête de la page -->
+<ion-header>
+  
+  <!-- Barre de navigation -->
+  <ion-navbar color="appbase">
+    
+    <!-- Titre de la page -->
+    <ion-title>
+      Ionic 3 - Gestion du Presse-Papier
+    </ion-title>
+    
+  </ion-navbar>
+
+</ion-header>
+
+<!-- Contenu de la page -->
+<ion-content>
+
+  <!-- Boutons déclencheurs -->
+  <br/>
+  <button
+    ion-button block color="appbase"
+    (click)="copierVersPressePapier()">
+    Copier vers le Presse-Papier
+  </button>
+  <br/>
+  <button
+    ion-button block color="appbase"
+    (click)="collerDepuisPressePapier()">
+    Coller depuis le Presse-Papier
+  </button>
+  
+  <!-- Division affichageControle -->
+  <ion-card id="affichageControle"></ion-card>
+
+</ion-content>

@@ -1,0 +1,7 @@
+{
+  "name": "ionic3-screen_orientation",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}

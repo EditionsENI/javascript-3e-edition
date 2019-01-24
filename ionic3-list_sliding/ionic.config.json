@@ -1,0 +1,7 @@
+{
+  "name": "ionic3-list_sliding",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}

@@ -1,0 +1,7 @@
+{
+  "name": "ionic3-local_storage",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}

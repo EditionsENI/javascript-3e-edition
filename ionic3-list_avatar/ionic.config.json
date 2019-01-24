@@ -1,0 +1,7 @@
+{
+  "name": "ionic3-list_avatar",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}

@@ -1,0 +1,37 @@
+<!-- En-tête de la page -->
+<ion-header>
+
+  <!-- Barre de navigation -->
+  <ion-navbar color="primary">
+
+    <!-- Titre de la page -->	    
+    <ion-title>
+      Ionic 3 - Screen orientation
+    </ion-title>
+
+  </ion-navbar>
+
+</ion-header>
+
+<!-- Contenu de la page -->
+<ion-content padding>
+
+  <!-- Liste des boutons de l'application -->
+  <button ion-button
+    (click)="verrouillerPaysage()">
+    Verrouillage en mode Paysage
+  </button><br/>
+  <button ion-button
+    (click)="verrouillerPortrait()">
+    Verrouillage en mode Portrait
+  </button><br/>
+  <button ion-button
+    (click)="deverrouiller()">
+      Déverrouillage
+  </button><br/>
+  <button ion-button
+    (click)="rechercherOrientation()">
+    Recherche orientation en cours
+  </button>
+  
+</ion-content>

@@ -1,0 +1,47 @@
+<!-- En-tête de la page -->
+<ion-header>
+  
+  <!-- Barre de navigation -->
+  <ion-navbar color="primary">
+    
+    <!-- Titre de la page -->
+    <ion-title>
+      Ionic 3 - PGCD
+    </ion-title>
+    
+  </ion-navbar>
+
+</ion-header>
+
+<!-- Contenu de la page -->
+<ion-content>
+  
+  <!-- Liste des champs -->
+  <ion-list>
+    
+    <!-- Champ A -->
+    <ion-item>
+      <ion-label floating color="primary">A</ion-label>
+      <ion-input type="number" value="" #a></ion-input>
+    </ion-item>
+
+    <!-- Champ B -->
+    <ion-item>
+      <ion-label floating color="primary">B</ion-label>
+      <ion-input type="number" value="" #b></ion-input>
+    </ion-item>
+    
+    <!-- Bouton de validation -->
+    <br/>
+    <button
+      ion-button block color="primary"
+      (click)="calculPgcd(a.value, b.value)">
+      Calcul du PGCD
+    </button>
+
+    <!-- Division affichageResultat -->
+    <div id="affichageResultat"></div>
+
+  </ion-list>
+
+</ion-content>

@@ -1,0 +1,7 @@
+{
+  "name": "ionic3-chartjs_doughnut_php_json",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}

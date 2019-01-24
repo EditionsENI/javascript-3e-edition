@@ -1,0 +1,45 @@
+<!-- En-tête de la page -->
+<ion-header>
+  
+    <!-- Barre de titre -->
+    <ion-navbar color="secondary">
+  
+      <!-- Titre de la page -->
+      <ion-title>
+        Ionic 3 - Local Storage
+      </ion-title>
+    
+    </ion-navbar>
+  
+  </ion-header>
+  
+  <!-- Contenu de la page -->
+  <ion-content padding>
+  
+    <!-- Bouton d'écriture dans le Local Storage -->	
+    <button
+      ion-button
+      (click)="ecritureLocalStorage()">
+      Ecriture dans le Local Storage
+    </button>
+  
+    <!-- Bouton de lecture depuis le Local Storage -->	
+    <br/><br/><br/>
+    <button
+      ion-button
+      (click)="lectureLocalStorage()">
+      Lecture depuis Local Storage
+    </button>
+
+    <!-- Division affichageControle1 -->
+    <br/><br/>
+    <div id="affichageControle1"></div>
+  
+    <!-- Division affichageControle2 -->
+    <br/>
+    <div id="affichageControle2"></div>
+    
+    <!-- Division affichageControle3 -->
+    <div id="affichageControle3"></div>
+
+  </ion-content>

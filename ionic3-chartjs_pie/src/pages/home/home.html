@@ -1,0 +1,50 @@
+<!-- En-tête de la page -->
+<ion-header>
+  
+  <!-- Barre de navigation -->
+  <ion-navbar color="danger">
+    
+    <!-- Titre de la page -->
+    <ion-title>
+      Ionic 3 - Pie (Chart.js)
+    </ion-title>
+  
+  </ion-navbar>
+  
+</ion-header>
+  
+<!-- Contenu de la page -->
+<ion-content>
+
+  <!-- Affichage du graphique en mode Card -->
+  <ion-card>
+    
+  <!-- Entête de la Card -->
+  <ion-card-header>
+    Nombre de pays par confédération
+  </ion-card-header>
+  
+  <!-- Graphique (Pie) -->
+  <ion-card-content>
+    <canvas
+      #secteurs
+      width="200"
+      height="200"
+      style="border:1px solid">
+    </canvas>
+  </ion-card-content>
+  
+  <!-- Noms en clair des confédérations -->
+  <ion-card-header>
+    <font size="2">
+      UEFA : Europe<br/>
+      CONMEBOL : Amérique du Sud<br/>
+      AFC : Asie<br/>
+      CONCACAF : Amérique du Nord, Centrale & Caraïbes<br/>
+      CAF : Afrique
+    </font>
+  </ion-card-header>
+
+  </ion-card>
+
+</ion-content>

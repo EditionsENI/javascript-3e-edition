@@ -1,0 +1,87 @@
+<!-- En-tête de la page -->
+<ion-header>
+  
+  <!-- Barre de navigation -->
+  <ion-navbar color="primary">
+    <!-- Titre de la page -->
+    <ion-title>ionic 3 - List Sliding</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<!-- Contenu de la page -->
+<ion-content>
+  
+  <!-- Liste des pays -->
+  <ion-list>
+      
+    <!-- Liste avec mécanisme de glissement
+         vers la gauche et vers la droite -->
+    <ion-item-sliding *ngFor="let pays of listePays; let i=index">
+      <ion-item (click)="afficherNomPays(pays.nom_pays)">
+        <!-- Header du groupe-->
+        <p *ngIf="i % 4 == 0"> 
+          <ion-list-header full color="secondary">
+            Groupe {{ pays.groupe }}
+          </ion-list-header>
+        </p>
+        <!-- Drapeau -->
+        <ion-avatar item-left>
+          <img src="{{ pays.drapeau }}" />
+        </ion-avatar>
+        <!-- Nom du pays -->
+        <h1>{{ pays.nom_pays }}</h1>
+        <!-- Surnon -->
+        <h2>Surnom : {{ pays.surnom }}</h2>
+        <!-- Sélectionneur -->
+        <h2>Sélectionneur : {{ pays.selectionneur }}</h2>
+      </ion-item>
+      
+      <!-- Bouton(s) de gauche -->
+      <ion-item-options side="left" >
+        
+        <!-- Bouton de visualisation
+             détaillée d'un enregistrement -->
+        <button
+          ion-button
+          color="primary"
+          (click)="afficherDetailsPays(
+            pays.nom_pays,
+            pays.groupe,
+            pays.surnom,
+            pays.selectionneur
+          )">
+          <ion-icon name="eye"></ion-icon>
+          Visualisation
+        </button>
+        
+        <!-- Bouton de mise à jour
+             d'un enregistrement -->
+        <button
+          ion-button
+          color="secondary"
+          (click)="modifierFichePays(pays.nom_pays)">
+          <ion-icon name="open"></ion-icon>
+          Mise à jour
+        </button>
+      </ion-item-options>
+      
+      <!-- Bouton(s) de droite -->
+      <ion-item-options side="right">
+        
+        <!-- Bouton de suppression
+             d'un enregistrement -->
+        <button
+          ion-button
+          color="danger"
+          (click)="supprimerFichePays(pays.nom_pays)">
+          <ion-icon name="trash"></ion-icon>
+          Suppression
+        </button>
+      
+      </ion-item-options>
+    
+    </ion-item-sliding>
+  
+  </ion-list>
+    
+</ion-content>

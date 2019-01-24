@@ -1,0 +1,7 @@
+{
+  "name": "ionic3-passage_parametres",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}

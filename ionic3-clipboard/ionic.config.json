@@ -1,0 +1,7 @@
+{
+  "name": "ionic3-clipboard",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}

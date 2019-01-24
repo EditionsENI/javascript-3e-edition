@@ -1,0 +1,50 @@
+<!-- En-tête de la page -->
+<ion-header>
+  
+  <!-- Barre de navigation -->
+  <ion-navbar color="primary">
+    
+    <!-- Titre de la page -->
+    <ion-title>
+      Ionic 3 - Racines polynome
+    </ion-title>
+
+  </ion-navbar>
+
+</ion-header>
+
+<!-- Contenu de la page -->
+<ion-content>
+  
+  <!-- Liste des champs -->
+  <ion-list>
+    
+    <!-- Champ A -->
+    <ion-item>
+      <ion-label floating color="primary">A</ion-label>
+      <ion-input type="number" value="" #a></ion-input>
+    </ion-item>
+
+    <!-- Champ B -->
+    <ion-item>
+      <ion-label floating color="primary">B</ion-label>
+      <ion-input type="number" value="" #b></ion-input>
+    </ion-item>
+
+    <!-- Champ C -->
+    <ion-item>
+      <ion-label floating color="primary">C</ion-label>
+      <ion-input type="number" value="" #c></ion-input>
+    </ion-item>
+    
+    <!-- Bouton de validation -->
+    <br>
+    <button
+      ion-button block color="primary"
+      (click)="calculRacines(a.value, b.value, c.value)">
+      Calcul des racines
+    </button>
+
+  </ion-list>
+
+</ion-content>

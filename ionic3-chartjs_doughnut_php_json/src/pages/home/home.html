@@ -1,0 +1,39 @@
+<!-- En-tête de la page -->
+<ion-header>
+  
+    <!-- Barre de navigation -->
+    <ion-navbar color="danger">
+      
+      <!-- Titre de la page -->
+      <ion-title>
+        Ionic 3 - Doughnut JSON (Chart.js)
+      </ion-title>
+    
+    </ion-navbar>
+  
+  </ion-header>
+  
+<!-- Contenu de la page -->
+  <ion-content>
+  
+    <!-- Affichage du graphique en mode Card -->
+    <ion-card>
+      
+    <!-- Entête de la Card -->
+    <ion-card-header>
+      Classement des buteurs
+    </ion-card-header>
+    
+    <!-- Graphique (beignet) -->
+    <ion-card-content>
+      <canvas
+        #beignet
+        width="200"
+        height="200"
+        style="border:1px solid">
+      </canvas>
+    </ion-card-content>
+    
+    </ion-card>
+  
+  </ion-content>

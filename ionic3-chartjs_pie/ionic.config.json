@@ -1,0 +1,7 @@
+{
+  "name": "ionic3-chartjs_pie",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}

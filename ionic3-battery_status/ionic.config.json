@@ -1,0 +1,7 @@
+{
+  "name": "ionic3-battery_status",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}

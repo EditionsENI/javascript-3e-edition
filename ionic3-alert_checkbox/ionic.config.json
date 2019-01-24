@@ -1,0 +1,7 @@
+{
+  "name": "ionic3-alert_checkbox",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}

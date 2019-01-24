@@ -1,0 +1,7 @@
+{
+  "name": "ionic3-chartjs_bar",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
